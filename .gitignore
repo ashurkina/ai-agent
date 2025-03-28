@@ -1,0 +1,4 @@
+#ignore
+.rasa/
+.venv/
+.models/
