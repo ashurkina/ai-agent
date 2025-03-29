@@ -4,8 +4,6 @@ WORKDIR /app
 
 COPY . /app
 
-RUN rasa train
-
 EXPOSE 5005
 
-CMD ["run", "--enable-api", "--cors", "*", "--debug"]
+CMD ["bash", "-c", "rasa train && rasa run --enable-api --cors '*' --debug"]
