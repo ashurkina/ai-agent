@@ -6,4 +6,4 @@ COPY . /app
 
 EXPOSE 5005
 
-CMD ["bash", "-c", "rasa train && rasa run --enable-api --cors '*' --debug"]
+CMD bash -c "rasa train && rasa run --enable-api --cors '*' --debug"
